@@ -1,0 +1,12 @@
+SELECT CAST('5' AS INTEGER) AS new_int;
+-- OR
+SELECT '5'::INTEGER;
+
+--Performing CAST on column
+-- Syntax
+-- SELECT CAST(COLUMN_NAME AS DATATYPE) FROM TABLENAME;
+
+SELECT CAST(inventory_id AS VARCHAR) FROM rental;
+
+
+SELECT CHAR_LENGTH(CAST(inventory_id AS VARCHAR)) FROM rental;
